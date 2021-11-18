@@ -8,18 +8,15 @@ window.addEventListener("DOMContentLoaded", () => {
     alert("💣");
   });
 });
-  document.body.onclick = addElement;
 
+  document.body.onclick = createElements();
 
-  function addElement () {
-  const newArticle = document.createElement("article");
-
-  const newContent = document.createTextNode("Hi there and greetings!");
-
-  newArticle.appendChild(newContent);
-  newArticle.classList.add("message");
-
-  const currentArticle = document.getElementById("article1");
-  document.body.insertBefore(newArticle, currentArticle);
-
+        function createElements(){
+          var text = ["text1", "text2", "text3", "text4", "text5"];
+          text.forEach(function(el) {
+          var div = document.createElement("div");
+          div.className = "finalBlock";
+          div.innerHTML = el;
+          document.body.appendChild(div);
+})
 };

@@ -8,7 +8,6 @@ window.addEventListener("DOMContentLoaded", () => {
     alert("💣");
   });
 });
-  document.body.onclick = addElement;
 
   document.body.onclick = createElements();
 

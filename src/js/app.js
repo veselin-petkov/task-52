@@ -9,7 +9,6 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-  document.body.onclick = createElements();
 
         function createElements(){
           var text = ["text1", "text2", "text3", "text4", "text5"];

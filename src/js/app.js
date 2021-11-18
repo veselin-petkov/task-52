@@ -14,9 +14,9 @@ window.addEventListener("DOMContentLoaded", () => {
         function createElements(){
           var text = ["text1", "text2", "text3", "text4", "text5"];
           text.forEach(function(el) {
-          var article = document.createElement("article");
-          article.className = "message";
-          article.innerHTML = el;
-          document.body.appendChild(article);
+          var div = document.createElement("div");
+          div.className = "message";
+          div.innerHTML = el;
+          document.body.appendChild(div);
 })
 };

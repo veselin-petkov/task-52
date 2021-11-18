@@ -15,11 +15,21 @@
       <button class="button">Boom?</button>
     </div>
     <script>
-/*
-     document.body.onclick = addElements;
+        document.body.onclick = createElements();
+
+        function createElements(){
+          var text = ["text1", "text2", "text3", "text4", "text5"];
+          text.forEach(function(el) {
+          var div = document.createElement("div");
+          div.className = "finalBlock";
+          div.innerHTML = el;
+          document.body.appendChild(div);
+})
+};
+ /*    document.body.onclick = addElements;
 
 
-    function addElements () {
+   function addElements () {
     const newArticle = document.createElement("article");
 
       const newContent = document.createTextNode("Hi there and greetings!");
@@ -30,7 +40,7 @@
 
     document.body.appendChild(newArticle);
 
-
+    
 };*/
     </script>
   </body>

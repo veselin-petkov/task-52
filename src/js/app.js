@@ -8,11 +8,8 @@ window.addEventListener("DOMContentLoaded", () => {
     alert("💣");
   });
 });
-
-for (let index = 0; index < 5; index++) {
   document.body.onclick = addElement;
-  
-}
+
 
   function addElement () {
   const newArticle = document.createElement("article");
@@ -20,7 +17,9 @@ for (let index = 0; index < 5; index++) {
   const newContent = document.createTextNode("Hi there and greetings!");
 
   newArticle.appendChild(newContent);
+  newArticle.classList.add("message");
 
   const currentArticle = document.getElementById("article1");
   document.body.insertBefore(newArticle, currentArticle);
+
 };

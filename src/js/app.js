@@ -6,17 +6,10 @@ window.addEventListener("DOMContentLoaded", () => {
   const button = document.querySelector(".button");
   button.addEventListener("click", () => {
     alert("💣");
-    var text = ["text1", "text2", "text3", "text4", "text5"];
-          text.forEach(function(el) {
-          var div = document.createElement("div");
-          div.className = "message";
-          div.innerHTML = el;
-          document.body.appendChild(div);
-})
   });
 });
-    //document.body.onclick = createElements();
-/*
+    document.body.onclick = createElements;
+
         function createElements(){
           var text = ["text1", "text2", "text3", "text4", "text5"];
           text.forEach(function(el) {
@@ -25,4 +18,4 @@ window.addEventListener("DOMContentLoaded", () => {
           div.innerHTML = el;
           document.body.appendChild(div);
 })
-};*/
+};
